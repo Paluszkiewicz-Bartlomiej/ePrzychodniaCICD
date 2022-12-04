@@ -1,0 +1,3 @@
+FROM mysql
+COPY elektronicznaPrzychodnia/clinic.sql /docker-entrypoint-initdb.d/
+COPY elektronicznaPrzychodnia/db_scripts/*.sql /docker-entrypoint-initdb.d/
