@@ -8,6 +8,10 @@ services:
       - "db:database"
     volumes:
       - .\elektronicznaPrzychodnia:/var/www/html
+    environment:
+      MYSQL_HOST: database
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: P@ssw0rd
   db:
     build:
       dockerfile: DbDockerfile
